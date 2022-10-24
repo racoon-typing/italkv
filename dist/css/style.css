@@ -318,7 +318,7 @@
   box-sizing: border-box;
   max-width: 500px;
   padding: 0 20px;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 40px;
   margin: 0 auto;
 }
@@ -333,47 +333,24 @@
 .offer__title--red {
   color: #A81919;
 }
-.offer__description {
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-}
-.offer__img {
-  display: block;
-  width: 350px;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 60px;
-  animation-duration: 3s;
-  animation-name: show;
-}
-@keyframes show {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .offer__button {
-  color: #1877f2;
-  background-color: transparent;
-  border: 1px solid #cccccc;
-  padding: 10px 55px;
+  width: 160px;
+  height: 42px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
 }
 .offer__button:hover {
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
+  background-color: #FFDE5F;
+  color: black;
 }
 .offer__button:active {
-  outline: 1px solid #1877f2;
+  opacity: 0.7;
 }
 @media (min-width: 768px) {
   .offer__bg-image {
@@ -412,11 +389,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .offer__img {
-    margin-top: 0;
-    width: 400px;
-    height: auto;
   }
 }
 @media (min-width: 1200px) {
