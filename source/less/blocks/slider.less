@@ -1,0 +1,114 @@
+// Слайдер
+.image-slider {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &__slide {
+        padding: 10px 30px;
+        padding-bottom: 50px;
+        padding-top: 30px;
+        box-sizing: border-box;
+    }
+
+    &__wrapper-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__column-left {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    &__text {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.image-slider .swiper {
+    &-button-prev,
+    &-button-next {
+        --swiper-navigation-size: 30px;
+    }
+
+    &__wrapper-item {
+        width: 100%;
+    }
+
+    &-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .image-slider {
+        &__wrapper-item {
+            display: grid;
+            grid-template-columns: 40% 60%;
+        }
+
+        &__column-left {
+            margin-bottom: 0;
+        }
+
+        &__img {
+            width: 200px;
+            height: 200px;
+        }
+
+        &__column-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-left: 15px;
+            border-left: 1px solid #000000;
+        }
+
+        &__title {
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        &__text {
+            font-size: 24px;
+            line-height: 28px;
+            text-align: left;
+        }
+
+        &__slide {
+            padding: 80px 40px;
+        }
+    }
+
+    .image-slider .swiper {
+        &-pagination-bullet {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}
+
+
+
+@media (min-width: 1200px) {}

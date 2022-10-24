@@ -1,0 +1,111 @@
+.instruction {
+    background-color: @bg-color-fourth;
+
+    &__wrapper {
+        box-sizing: border-box;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: 'Oswald';
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    &__video {
+        width: 100%;
+        height: auto;
+    }
+
+    &__button {
+        color: #ffffff;
+        background-color: @bg-color-main;
+        border: none;
+        padding: 10px 55px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+        margin-top: 30px;
+
+        &:hover {
+            color: @color-main;
+            background-color: #ffffff;
+        }
+
+        &:active {
+            outline: 1px solid @color-main;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .instruction {
+        &__wrapper {
+            max-width: 1200px;
+            padding: 80px 30px;
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        &__text {
+            font-size: 24px;
+            line-height: 28px;   
+        }
+
+        &__button {
+            font-size: 18px;
+            line-height: 24px;
+            padding: 14px 80px;
+        }
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .instruction {
+        &__wrapper {
+            max-width: 1440px;
+            padding: 100px 110px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+        }
+
+        &__title {
+            margin: 0;
+            grid-column: 1 / 2;
+        }
+
+        &__text {
+            margin: 0;
+            grid-column: 1 / 2;
+        }
+
+        &__button {
+            grid-column: 1 / 2;
+            margin-top: 0;
+            width: 220px;
+            height: 55px;
+        }
+
+        &__video {
+            grid-column: 2 / 3;
+            grid-row: 1 / 4;
+        }
+    }
+}
