@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dietica</title>
+    <title>Автомойка Italkv</title>
 
     <!-- Дата и время -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -20,29 +20,34 @@
     <header class="main-header">
         <div class="main-header__wrapper">
             <div class="main-header__wrapper-logo">
-                <a class="main-header__logo">
-                    <img class="main-header__logo-icon" src="./img/icons/logo.jpg" alt="" width="60" height="60">
-                </a>
+                <div class="main-header__wrapper-left">
+                    <a class="main-header__logo">
+                        <img class="main-header__logo-icon" src="./img/icons/logo.jpg" alt="" width="60" height="60">
+                    </a>
+                    <h2 class="main-header__logo-name">
+                        Итальянский
+                        <br>
+                        Квартал
+                    </h2>
+                </div>
+
                 <div class="main-header__wrapper-button">
-                    <button class="main-header__button-buy">Buy</button>
+                    <!-- <button class="main-header__button-buy">+7 (969) 040-24-04</button> -->
                     <button class="main-header__button-nav">
-                        <span class="visually-hidden">Menu</span>
+                        <span class="visually-hidden">Меню</span>
                     </button>
                 </div>
             </div>
             <nav class="main-header__nav main-header__nav--close">
                 <ul class="main-header__list">
                     <li class="main-header__item">
-                        <p class="main-header__item-text">Benefit</p>
+                        <p class="main-header__item-text">Почему к нам?</p>
                     </li>
                     <li class="main-header__item">
-                        <p class="main-header__item-text">How to use</p>
+                        <p class="main-header__item-text">Услуги</p>
                     </li>
                     <li class="main-header__item">
-                        <p class="main-header__item-text">Guarantees</p>
-                    </li>
-                    <li class="main-header__item">
-                        <p class="main-header__item-text">Review</p>
+                        <p class="main-header__item-text">Как проехать?</p>
                     </li>
                 </ul>
             </nav>
@@ -51,14 +56,18 @@
 
     <main class="main-container">
 
-        <h1 class="visually-hidden">Weight loss product</h1>
+        <h1 class="visually-hidden"></h1>
 
         <!-- Оффер -->
         <section class="offer">
             <div class="offer__wrapper">
                 <div class="offer__column-left">
-                    <h2 class="offer__title">
-                        Solution to the problem of excess weight
+                    <h2 class="offer__title">  
+                        Автомойка 
+                        <br>
+                        в 
+                        <span class="offer__title--red">центре</span>
+                        Москвы
                     </h2>
 
                     <p class="offer__description">
@@ -1323,18 +1332,18 @@
             <section class="product">
                 <div class="product__wrapper">
                     <a class="product__link">
-                    <div class="product__wrapper--second">
+                        <div class="product__wrapper--second">
                             <h2 class="product__title">
                                 Sale 50%
                             </h2>
-    
+
                             <img src="./img/content-photo/product-1.png" alt="" class="product__img" width="360"
                                 height="360">
-    
+
                             <p class="product__text">
                                 Now you can get Dietica cheaper with a 50% discount
                             </p>
-    
+
                             <p class="product__text-date">
                                 This promotion is valid until <b><span class="data"></span></b>.
                             </p>
@@ -1353,9 +1362,9 @@
 
                 <form id="form2" action="lemon.php?p={p}" method="POST" class="wv_order-form">
                     <div class="form__container-input">
-                        <input id="name1" name="name" type="text" class="form__input form__input--name" placeholder="Name:"
-                            required>
-        
+                        <input id="name1" name="name" type="text" class="form__input form__input--name"
+                            placeholder="Name:" required>
+
                         <input id="phone1" name="phone" type="tel" class="form__input form__input--phone"
                             placeholder="0812-345-678" autocomplete="off" data-intl-tel-input-id="0" required>
                     </div>

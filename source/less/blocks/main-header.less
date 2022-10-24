@@ -1,12 +1,21 @@
 .main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: #e8e8e8;
+    background-color: white;
+    z-index: 5;
 
     &__wrapper {
         box-sizing: border-box;
         max-width: 500px;
         margin: 0 auto;
         padding: 10px 20px;
+
+        &-left {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__wrapper-logo {
@@ -14,14 +23,19 @@
         justify-content: space-between;
         align-items: center;
         text-transform: uppercase;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #000000;
     }
 
     &__logo {
         font-weight: 700;
         font-size: 20px;
         line-height: 20px;
+        margin-right: 8px;
+
+        &-name {
+            margin: 0;
+            font-size: 18px;
+            line-height: 18px;    
+        }
     }
 
     &__wrapper-button {
