@@ -1,4 +1,4 @@
-.research {
+.advantages {
     &__wrapper {
         box-sizing: border-box;
         max-width: 500px;
@@ -29,81 +29,10 @@
         margin-top: 30px;
     }
 
-    &__item {
-        position: relative;
-        padding-left: 80px;
-        margin-bottom: 25px;
-
-        &-icon-wrapper {
-            display: none;
-        }
-
-        &::before {
-            content: '';
-            position: absolute;
-            width: 68px;
-            height: 68px;
-            top: 0;
-            left: 0;            
-        }
-
-        &:nth-child(1)::before {
-            background-image: url('../../img/content-photo/icons/scales.svg');
-            background-position: left;
-            background-repeat: no-repeat;
-            z-index: 2;
-        }
-
-        &:nth-child(2)::before {
-            background-image: url('../../img/content-photo/icons/burger.svg');
-            background-position: left;
-            background-repeat: no-repeat;
-            z-index: 2;
-        }
-
-        &:nth-child(3)::before {
-            background-image: url('../../img/content-photo/icons/tablet.svg');
-            background-position: left;
-            background-repeat: no-repeat;
-            z-index: 2;
-        }
-
-        &:nth-child(4)::before {
-            background-image: url('../../img/content-photo/icons/lightning.svg');
-            background-position: left;
-            background-repeat: no-repeat;
-            z-index: 2;
-        }
-
-        &:nth-child(5)::before {
-            background-image: url('../../img/content-photo/icons/hand.svg');
-            background-position: left;
-            background-repeat: no-repeat;
-            z-index: 2;
-        }
-
-        &-top-wrapper {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 10px;
-        }
-
-        &-title {
-            margin: 0;
-            font-size: 16px;
-            line-height: 24px;
-        }
-
-        &-text {
-            margin: 0;
-            font-size: 14px;
-            line-height: 18px;
-        }
-    }
 }
 
 @media (min-width: 768px) {
-    .research {
+    .advantages {
         &__wrapper {
             max-width: 1200px;
             padding: 80px 30px;
@@ -141,7 +70,7 @@
 }
 
 @media (min-width: 1200px) {
-    .research {
+    .advantages {
         &__wrapper {
             max-width: 1440px;
             padding: 100px 110px;
