@@ -1,5 +1,6 @@
-.compound {
-
+.price {
+    background-color: @bg-color-second;
+    
     &__wrapper {
         box-sizing: border-box;
         max-width: 500px;
@@ -10,11 +11,19 @@
     }
 
     &__title {
+        font-family: @second-font;
         margin: 0;
-        font-family: 'Oswald';
-        font-size: 36px;
-        line-height: 40px;
-        margin-bottom: 20px;
+        text-align: center;
+        font-size: 28px;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+    &__sub-title {
+        margin: 0;
+        text-align: center;
+        font-size: 20px;
+        line-height: normal;
     }
 
     &__text {
@@ -28,10 +37,30 @@
         margin: 0;
         padding: 0;
         list-style-type: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     &__item {
-        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 30px;
+        background-color: #ffffff;
+        box-shadow: 0 6px 6px rgb(0 0 0 / 25%), 0 3px 3px rgb(0 0 0 / 22%);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-title {
+            margin: 0;
+            text-align: center;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 20px;
+        }
 
         &-img {
             display: block;
@@ -48,11 +77,47 @@
             text-align: center;
         }
     }
+
+    &__sub-list {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    &__sub-item {
+        margin-bottom: 10px;
+
+        &-text {
+            font-size: 18px;
+            line-height: 26px;
+            text-align: left;
+            margin: 0;
+        }
+
+        &-number {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: left;
+            margin: 0;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 40px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: normal;
+    }
 }
 
 
 @media (min-width: 768px) {
-    .compound {
+    .price {
         &__wrapper {
             max-width: 1200px;
             padding: 80px 30px;
@@ -104,7 +169,7 @@
 }
 
 @media (min-width: 1200px) {
-    .compound {
+    .price {
         &__list {
             display: flex;
         }
