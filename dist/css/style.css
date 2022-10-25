@@ -764,6 +764,16 @@
   margin: 0 auto;
   font-size: 18px;
   line-height: normal;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+}
+.price__link:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.price__link:active {
+  outline: 1px solid #1877f2;
 }
 @media (min-width: 768px) {
   .price__wrapper {
