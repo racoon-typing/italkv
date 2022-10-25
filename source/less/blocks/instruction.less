@@ -11,9 +11,41 @@
     &__title {
         margin: 0;
         text-align: center;
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 26px;
+        line-height: normal;
         margin-bottom: 20px;
+    }
+
+    &__video {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        position: relative;
+        padding-bottom: 20px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            background-image: url("../img/content-photo/icons/arrow-first.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 
     &__text {
@@ -21,31 +53,7 @@
         margin-bottom: 15px;
     }
 
-    &__video {
-        width: 100%;
-        height: auto;
-    }
 
-    &__button {
-        color: #ffffff;
-        background-color: @bg-color-main;
-        border: none;
-        padding: 10px 55px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 16px;
-        text-transform: uppercase;
-        margin-top: 30px;
-
-        &:hover {
-            color: @color-main;
-            background-color: #ffffff;
-        }
-
-        &:active {
-            outline: 1px solid @color-main;
-        }
-    }
 }
 
 @media (min-width: 768px) {

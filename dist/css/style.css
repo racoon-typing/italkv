@@ -387,35 +387,41 @@
 .instruction__title {
   margin: 0;
   text-align: center;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 26px;
+  line-height: normal;
   margin-bottom: 20px;
+}
+.instruction__video {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.instruction__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.instruction__item {
+  position: relative;
+  padding-bottom: 20px;
+}
+.instruction__item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  background-image: url("../img/content-photo/icons/arrow-first.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .instruction__text {
   margin: 0;
   margin-bottom: 15px;
-}
-.instruction__video {
-  width: 100%;
-  height: auto;
-}
-.instruction__button {
-  color: #ffffff;
-  background-color: #1877f2;
-  border: none;
-  padding: 10px 55px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  margin-top: 30px;
-}
-.instruction__button:hover {
-  color: #1877f2;
-  background-color: #ffffff;
-}
-.instruction__button:active {
-  outline: 1px solid #1877f2;
 }
 @media (min-width: 768px) {
   .instruction__wrapper {
