@@ -724,9 +724,8 @@
 .price__item-img {
   display: block;
   margin: 0 auto;
-  width: 200px;
-  margin-bottom: 10px;
-  border-radius: 50%;
+  width: 100px;
+  margin-bottom: 20px;
 }
 .price__item-text {
   margin: 0;
