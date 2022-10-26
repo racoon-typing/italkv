@@ -1043,17 +1043,6 @@
 .image-slider .swiper-button-next {
   --swiper-navigation-size: 30px;
 }
-.image-slider .swiper_slide {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 30px;
-  padding-bottom: 50px;
-  padding-top: 30px;
-  box-sizing: border-box;
-}
 .image-slider .swiper__wrapper-item {
   width: 100%;
 }
