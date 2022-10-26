@@ -824,6 +824,9 @@
     width: 270px;
   }
 }
+.company {
+  background-color: #f3f3f3;
+}
 .company__wrapper {
   box-sizing: border-box;
   max-width: 500px;
