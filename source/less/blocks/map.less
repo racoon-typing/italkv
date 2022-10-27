@@ -1,5 +1,5 @@
-.time {
-    background-color: @color-second;
+.map {
+    background-color: #16142c;
 
     &__wrapper {
         box-sizing: border-box;
@@ -16,34 +16,41 @@
         text-align: center;
         font-size: 28px;
         line-height: normal;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+        color: #ffffff;
     }
 
     &__sub-title {
-        display: block;
         margin: 0;
         text-align: center;
         font-size: 20px;
         line-height: normal;
-        padding: 20px 0;
-        background-color: @bg-color-second;
-        margin-bottom: 20px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 15px;
     }
 
-    &__timetable {
-        &-icon {
-            display: block;
-            margin: 0 auto;
-            width: 300px;
-            fill: #ffffff;
-            margin-bottom: 20px;
-        }
+    &__link {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 160px;
+        height: 42px;
+        color: black;
+        background-color: white;
+        border: none;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        text-decoration: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
 
-        &-text {
-            margin: 0;
-            text-align: center;
-            font-size: 20px;
-            line-height: normal;
+        &:hover {
+            background-color: @bg-color-fifth; 
         }
     }
 }
