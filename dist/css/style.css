@@ -634,14 +634,16 @@
 .main-footer {
   width: 100%;
   flex-shrink: 0;
-  background-color: #1877f2;
 }
 .main-footer__wrapper {
   max-width: 500px;
   box-sizing: border-box;
   margin: 0 auto;
-  color: #ffffff;
   padding: 20px;
+  color: black;
+}
+.main-footer__author-wrapper {
+  text-align: center;
 }
 @media (min-width: 768px) {
   .main-footer__wrapper {
@@ -1195,7 +1197,7 @@
   padding: 0 10px;
   text-decoration: none;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 .map__link:hover {
@@ -1338,11 +1340,9 @@
   justify-content: center;
   min-height: 30px;
 }
-.social__item-icon {
-  color: #fff;
-}
 .social__link {
   margin-left: 5px;
+  color: black;
 }
 @media (min-width: 768px) {
   .social__list {
