@@ -1196,9 +1196,13 @@
   text-decoration: none;
   margin: 0 auto;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .map__link:hover {
   background-color: #FFDE5F;
+}
+.map__script-wrapper {
+  width: 100%;
 }
 @media (min-width: 768px) {
   .time__wrapper {
@@ -1245,6 +1249,9 @@
   color: #A81919;
 }
 .offer__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   width: 160px;
   height: 42px;
@@ -1257,6 +1264,8 @@
   line-height: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
 }
 .offer__button:hover {
   background-color: #FFDE5F;
