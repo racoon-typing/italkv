@@ -1,6 +1,6 @@
 let buttonNav = document.querySelector('.main-header__button-nav');
 let navNode = document.querySelector('.main-header__nav');
-let menuItemNode = document.querySelector('.main-header__item-text');
+let menuItemNode = document.querySelectorAll('.main-header__item-text');
 
 if (buttonNav) {
     buttonNav.addEventListener('click', function () {
@@ -19,10 +19,14 @@ if (buttonNav) {
 }
 
 if (menuItemNode) {
-    menuItemNode.addEventListener('click', function () {
-        buttonNav.classList.remove('main-header__nav--open');
-        buttonNav.classList.add('main-header__nav--close');
-    }) 
+    for (let i = 0; i < menuItemNode.length; i++) {
+        menuItemNode[i].addEventListener('click', function () {
+            navNode.classList.remove('main-header__nav--close');
+            navNode.classList.add('main-header__nav--close');
+            buttonNav.classList.remove('main-header__button-nav--cross');
+            buttonNav.classList.add('main-header__button-nav');
+        }) 
+    }
 }
 
 // Инициализируем слайдер 
