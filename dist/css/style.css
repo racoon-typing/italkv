@@ -332,16 +332,19 @@
 @media (min-width: 768px) {
   .benefit__wrapper {
     max-width: 1200px;
-    padding: 40px 30px;
-    padding-bottom: 80px;
+    padding: 80px 30px;
   }
   .benefit__title {
     font-size: 48px;
     line-height: 48px;
+    margin-bottom: 30px;
   }
   .benefit__text {
     font-size: 24px;
     line-height: 28px;
+  }
+  .benefit___wrapper-list {
+    display: flex;
   }
   .benefit__list {
     display: grid;
