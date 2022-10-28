@@ -1,5 +1,6 @@
 let buttonNav = document.querySelector('.main-header__button-nav');
 let navNode = document.querySelector('.main-header__nav');
+let menuItemNode = document.querySelector('.main-header__item-text');
 
 if (buttonNav) {
     buttonNav.addEventListener('click', function () {
@@ -7,9 +8,9 @@ if (buttonNav) {
         navNode.classList.toggle('main-header__nav--open');
 
         if (navNode.classList.contains('main-header__nav--open')) {
-            console.log('есть');
             buttonNav.classList.remove('main-header__button-nav');
             buttonNav.classList.add('main-header__button-nav--cross');
+            buttonNav.style.zIndex = "2";
         } else {
             buttonNav.classList.add('main-header__button-nav');
             buttonNav.classList.remove('main-header__button-nav--cross');
@@ -17,6 +18,11 @@ if (buttonNav) {
     });
 }
 
+if (menuItemNode) {
+    menuItemNode.addEventListener('click', function () {
+        buttonNav.classList.remove('main-header__nav--open');
+    }) 
+}
 
 // Инициализируем слайдер 
 new Swiper('.image-slider', {
