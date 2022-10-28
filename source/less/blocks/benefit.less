@@ -20,7 +20,11 @@
     &__text {
         margin: 0;
         font-size: 18px;
-        line-height: 26px;
+        line-height: 26px;  
+    }
+
+    &__text br {
+        display: none;
     }
 
     &__list {
@@ -72,6 +76,17 @@
         &__wrapper {
             max-width: 1200px;
             padding: 80px 30px;
+
+            &-list {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 20px;
+            }
+
+            &-left {
+                width: 58%;
+            }
         }
 
         &__title {
@@ -85,19 +100,17 @@
             line-height: 28px;
         }
 
-        &___wrapper-list {
-            display: flex;
+        &__text br {
+            display: block;
         }
 
         &__list {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
         }
 
         &__item {
-            padding: 30px 20px;
-            margin-bottom: 0;
+            margin-bottom: 15px;
 
             &-img {
                 width: 100px;
@@ -114,6 +127,14 @@
                 font-size: 20px;
                 line-height: 24px;
             }
+        }
+
+        &__img-wrapper {
+            width: 40%;
+        }
+
+        &__img {
+            width: 100%;
         }
     }
 }
