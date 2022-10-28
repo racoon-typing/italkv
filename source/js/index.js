@@ -21,6 +21,7 @@ if (buttonNav) {
 if (menuItemNode) {
     menuItemNode.addEventListener('click', function () {
         buttonNav.classList.remove('main-header__nav--open');
+        buttonNav.classList.add('main-header__nav--close');
     }) 
 }
 
