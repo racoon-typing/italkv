@@ -21,7 +21,7 @@ if (buttonNav) {
 if (menuItemNode) {
     for (let i = 0; i < menuItemNode.length; i++) {
         menuItemNode[i].addEventListener('click', function () {
-            navNode.classList.remove('main-header__nav--close');
+            navNode.classList.remove('main-header__nav--open');
             navNode.classList.add('main-header__nav--close');
             buttonNav.classList.remove('main-header__button-nav--cross');
             buttonNav.classList.add('main-header__button-nav');
