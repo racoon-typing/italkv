@@ -1034,12 +1034,16 @@
   .company__item {
     display: block;
   }
-  .company__item-img-wrapper {
+  .company__item-number-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    margin-bottom: 15px;
+  }
+  .company__item-number {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .company__item-number-text {
+    font-size: 24px;
+    line-height: normal;
   }
   .company__item-title {
     display: block;
