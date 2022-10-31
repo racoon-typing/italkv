@@ -1030,20 +1030,39 @@
   }
   .company__list {
     width: 708px;
+    margin: 0 auto;
+    margin-top: 60px;
   }
   .company__item {
-    display: block;
-  }
-  .company__item-number-wrapper {
     display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    border-bottom: 2px dashed black;
+    margin-bottom: 60px;
   }
   .company__item-number {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 35px;
+    z-index: 2;
   }
   .company__item-number-text {
     font-size: 24px;
     line-height: normal;
+    z-index: 2;
+  }
+  .company__item-number-wrapper {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .company__item-number-wrapper::before {
+    position: absolute;
+    content: '';
+    width: 130px;
+    height: 130px;
+    top: -10px;
+    left: calc(50% - 65px);
+    background-color: white;
+    border-radius: 50%;
   }
   .company__item-title {
     display: block;
@@ -1056,7 +1075,7 @@
     display: block;
     font-size: 18px;
     line-height: 24px;
-    text-align: justify;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
@@ -1283,6 +1302,9 @@
   background-color: #f3f3f3;
   margin-bottom: 20px;
 }
+.time__adress {
+  display: none;
+}
 .time__timetable-icon {
   display: block;
   margin: 0 auto;
@@ -1302,6 +1324,44 @@
     flex-direction: column;
     max-width: 1200px;
     padding: 80px 30px;
+  }
+  .time__wrapper-block {
+    display: flex;
+  }
+  .time__adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  .time__adress-title {
+    margin: 0;
+    font-size: 28px;
+    line-height: normal;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  .time__grade-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+  .time__grade-wrapper-icon {
+    color: #ffcc01;
+    width: 24px;
+    height: 24px;
+    margin-right: 3px;
+  }
+  .time__grade-wrapper-text {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .time__grade-wrapper-text--second {
+    color: #f3f3f3;
+  }
+  .time__timetable {
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
