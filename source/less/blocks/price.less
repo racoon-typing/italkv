@@ -166,6 +166,11 @@
             line-height: 48px;
         }
 
+        &__sub-title {
+            font-size: 20px;
+            line-height: normal;
+        }
+
         &__text {
             font-size: 24px;
             line-height: 28px;
@@ -175,8 +180,9 @@
         &__list {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 20px;
+            gap: 30px;
             margin-top: 50px;
+            margin-bottom: 50px;
         }
 
         &__item {
@@ -186,12 +192,18 @@
             border-radius: 5px;
             padding: 30px 20px;
             min-height: 350px;
+            margin-bottom: 0;
 
             &-wrapper-img {
                 display: flex;
                 align-items: center;
                 height: 200px;
                 margin-bottom: 30px;
+            }
+
+            &__title {
+                font-size: 20px;
+                line-height: normal;
             }
 
             &-img {
@@ -202,6 +214,12 @@
                 font-size: 20px;
                 line-height: 24px;
             }
+        }
+
+        &__link {
+            width: 250px;
+            height: 50px;
+            font-size: 22px;
         }
     }
 }
