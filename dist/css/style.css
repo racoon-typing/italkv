@@ -912,6 +912,7 @@
   .price__sub-item-text {
     font-size: 20px;
     line-height: 26px;
+    margin-bottom: 5px;
   }
   .price__sub-item-number {
     font-size: 18px;
@@ -959,10 +960,6 @@
   line-height: normal;
   font-weight: 700;
 }
-.company__img-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
 .company__list {
   margin: 0;
   padding: 0;
@@ -977,10 +974,22 @@
        column-gap: 20px;
   margin-bottom: 20px;
 }
-.company__item-img-wrapper {
+.company__item-number {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.company__item-number-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   grid-row: 1 / 3;
+}
+.company__item-number-text {
+  margin: 0;
+  text-align: center;
 }
 .company__item-img {
   width: 100%;
