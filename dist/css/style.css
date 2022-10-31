@@ -892,16 +892,31 @@
     height: 200px;
     margin-bottom: 30px;
   }
-  .price__item__title {
+  .price__item-title {
     font-size: 20px;
     line-height: normal;
   }
   .price__item-img {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   .price__item-text {
     font-size: 20px;
     line-height: 24px;
+  }
+  .price__sub-list {
+    flex-grow: 1;
+  }
+  .price__sub-item {
+    margin-bottom: 10px;
+  }
+  .price__sub-item-text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .price__sub-item-number {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
   }
   .price__link {
     width: 250px;
