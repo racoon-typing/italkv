@@ -15,11 +15,22 @@
         padding-bottom: 50px;
         padding-top: 30px;
         box-sizing: border-box;
+
+        &--news {
+            padding: 0 30px;
+            padding-bottom: 30px;
+            background: linear-gradient(85deg, #ffd885,#ffcd61,#ffc547);
+        }
     }
 
     &__wrapper-item {
         display: flex;
         flex-direction: column;
+        
+        &--news {
+            min-height: 120px;
+            justify-content: center;
+        }
     }
 
     &__title {
@@ -28,6 +39,11 @@
         font-size: 16px;
         line-height: 20px;
         text-align: center;
+
+        &--news {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
     }
 
     &__text {
@@ -44,6 +60,12 @@
 
     &__wrapper-item {
         width: 100%;
+    }
+
+    &-pagination {
+        &--news .swiper-pagination-bullet {
+            color: #fffffff;
+        }
     }
 
     &-pagination-bullet {
