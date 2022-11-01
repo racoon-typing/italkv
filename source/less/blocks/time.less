@@ -57,8 +57,42 @@
         &__wrapper {
             display: flex;
             flex-direction: column;
+            max-width: 768px;
+            padding: 80px 30px;
+
+            &-big-block {
+                display: flex;
+            }
+
+            &-block {
+                width: 50%;
+            }
+        }
+
+        &__sub-title {
+            width: 50%;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            background-color: #ffffff;
+        }
+
+        &__adress {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .time {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
             max-width: 1200px;
             padding: 80px 30px;
+            padding-bottom: 40px;
 
             &-block {
                 display: flex;
@@ -73,9 +107,24 @@
 
             &-title {
                 margin: 0;
-                font-size: 28px;
+                font-size: 32px;
                 line-height: normal;
-                margin-bottom: 10px;
+                color: #ffffff;
+                margin-bottom: 20px;
+            }
+
+            &-phone {
+                display: block;
+                font-size: 20px;
+                line-height: normal;
+                margin-bottom: 15px;
+            }
+
+            &-adress {
+                display: block;
+                font-size: 20px;
+                line-height: normal;
+                text-decoration: none;
                 color: #ffffff;
             }
         }
@@ -85,6 +134,7 @@
             align-items: center;
             justify-content: flex-start;
             padding: 10px 0;
+            margin-bottom: 5px;
 
             &-icon {
                 color: #ffcc01;
@@ -101,22 +151,6 @@
                     color: #f3f3f3;
                 }
             }
-        }
-
-        &__timetable {
-            width: 50%;
-        }
-    }
-}
-
-@media (min-width: 1200px) {
-    .time {
-        &__wrapper {
-            display: flex;
-            flex-direction: column;
-            max-width: 1200px;
-            padding: 80px 30px;
-            padding-bottom: 40px;
         }
     }
 }
