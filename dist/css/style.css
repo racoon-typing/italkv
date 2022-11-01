@@ -718,6 +718,9 @@
   .gallery__item {
     flex: 25%;
   }
+  .gallery__item-img {
+    width: 100%;
+  }
 }
 .price {
   background-color: #f3f3f3;
