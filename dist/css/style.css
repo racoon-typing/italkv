@@ -1405,7 +1405,7 @@
   width: 100%;
 }
 @media (min-width: 768px) {
-  .time__wrapper {
+  .map__wrapper {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -1413,7 +1413,7 @@
   }
 }
 @media (min-width: 1200px) {
-  .time__wrapper {
+  .map__wrapper {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
