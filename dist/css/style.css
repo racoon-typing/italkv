@@ -1346,64 +1346,6 @@
     display: none;
   }
 }
-@media (min-width: 1200px) {
-  .time__wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    padding: 80px 30px;
-    padding-bottom: 40px;
-  }
-  .time__wrapper-block {
-    display: flex;
-  }
-  .time__adress {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-  }
-  .time__adress-title {
-    margin: 0;
-    font-size: 32px;
-    line-height: normal;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-  .time__adress-phone {
-    display: block;
-    font-size: 20px;
-    line-height: normal;
-    margin-bottom: 15px;
-  }
-  .time__adress-adress {
-    display: block;
-    font-size: 20px;
-    line-height: normal;
-    text-decoration: none;
-    color: #ffffff;
-  }
-  .time__grade-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px 0;
-    margin-bottom: 5px;
-  }
-  .time__grade-wrapper-icon {
-    color: #ffcc01;
-    width: 24px;
-    height: 24px;
-    margin-right: 3px;
-  }
-  .time__grade-wrapper-text {
-    font-size: 20px;
-    line-height: normal;
-  }
-  .time__grade-wrapper-text--second {
-    color: #f3f3f3;
-  }
-}
 .map {
   background-color: #16142c;
 }
