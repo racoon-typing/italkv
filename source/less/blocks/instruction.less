@@ -125,31 +125,35 @@
         &__wrapper {
             max-width: 1440px;
             padding: 100px 110px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 30px;
         }
 
         &__title {
             margin: 0;
-            grid-column: 1 / 2;
+            margin-bottom: 40px;
+        }
+
+        &__video {
+            margin-bottom: 50px;
+        }
+
+        &__list {
+            display: flex;
+        }
+
+        &__item {
+            padding: 20px;
+            font-size: 22px;
+            line-height: normal;
+
+            &::before {
+                display: none;
+            }
         }
 
         &__text {
             margin: 0;
-            grid-column: 1 / 2;
-        }
-
-        &__button {
-            grid-column: 1 / 2;
-            margin-top: 0;
-            width: 220px;
-            height: 55px;
-        }
-
-        &__video {
-            grid-column: 2 / 3;
-            grid-row: 1 / 4;
+            font-size: 26px;
+            line-height: normal;
         }
     }
 }
