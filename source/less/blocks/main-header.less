@@ -173,6 +173,14 @@
             text-transform: uppercase;
             text-decoration: none;
             color: #000000;
+
+            &:hover {
+                color: @bg-color-main;
+            }
+
+            &:active {
+                color: #A81919;
+            }
         }
     }
 
@@ -228,15 +236,14 @@
         }
 
         &__item {
-            width: 110px;
+            width: 23%;
             min-height: 60px;
             justify-content: center;
             border-bottom: 1px solid black;
 
             &-text {
                 font-size: 18px;
-                padding-top: 10px;
-                padding-bottom: 10px;
+                padding: 10px 0;
             }
         }
     }
@@ -247,7 +254,7 @@
         &__wrapper {
             position: relative;
             max-width: 1440px;
-            padding: 40px 110px;
+            padding: 20px 110px;
         }
 
         &__wrapper-logo {
@@ -255,20 +262,34 @@
             border: none;
         }
 
-        &__nav {
-            position: absolute;
-            top: 41px;
-            right: 24%;
+        &__logo {
+            &-icon {
+                width: 80px;
+                height: 80px;
+            }
+
+            &-name {
+                font-size: 20px;
+                line-height: normal;
+            }
         }
 
         &__list {
+            top: 30px;
+            right: 9%;
             border: none;
+            margin-right: 0;
         }
 
         &__item {
-            width: 140px;
+            min-height: 45px;
             margin-right: 10px;
             border-bottom: 1px solid #000000;
+
+            &-text {
+                font-size: 20px;
+                line-height: normal;
+            }
         }
 
         &__item:last-child {
