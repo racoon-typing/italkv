@@ -138,12 +138,32 @@
 
         &__list {
             display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
         }
 
         &__item {
-            padding: 20px;
-            font-size: 22px;
-            line-height: normal;
+            min-height: auto;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+
+            &-link {
+                display: block;
+                width: 100%;
+                padding: 28px 20px;
+                font-size: 22px;
+                border-radius: 5px;
+                line-height: normal;
+                background-color: #f3f3f3;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    background-color: @bg-color-main;
+                    color: #ffffff;
+                    transform: translateX(20px);
+                }
+            }
 
             &::before {
                 display: none;
