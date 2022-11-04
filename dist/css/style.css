@@ -779,13 +779,13 @@
   .gallery__item {
     flex: 50%;
   }
-  .gallery-img {
+  .gallery__item-img {
     display: block;
     max-width: 100%;
     height: auto;
     transition: all 0.5s ease;
   }
-  .gallery-img--mobile {
+  .gallery__item-img--mobile {
     display: none;
   }
 }
