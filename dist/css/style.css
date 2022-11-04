@@ -293,9 +293,22 @@
   }
 }
 .bg-image__photo {
+  display: none;
+}
+.bg-image__photo--mobile {
   display: block;
   width: 100%;
   height: auto;
+}
+@media (min-width: 768px) {
+  .bg-image__photo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .bg-image__photo--mobile {
+    display: none;
+  }
 }
 .benefit {
   background-color: #f3f3f3;
