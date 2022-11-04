@@ -36,6 +36,7 @@
         flex-wrap: wrap;
         overflow: hidden;
         font-size: 0;
+        width: 100%;
     }
 
     &__item {
@@ -70,14 +71,15 @@
         }
 
         &-img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            transition: all .5s ease;
+            display: none;
+
+            &--mobile {
+                max-width: 100%;
+                height: auto;
+                transition: all .5s ease;
+            }
         }
     }
-
-
 }
 
 @media (min-width: 768px) {
@@ -94,6 +96,17 @@
 
         &__item {
             flex: 50%;
+        }
+
+        &-img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            transition: all .5s ease;
+
+            &--mobile {
+                display: none;
+            }
         }
     }
 }

@@ -729,6 +729,7 @@
   flex-wrap: wrap;
   overflow: hidden;
   font-size: 0;
+  width: 100%;
 }
 .gallery__item {
   position: relative;
@@ -759,7 +760,9 @@
   z-index: 2;
 }
 .gallery__item-img {
-  display: block;
+  display: none;
+}
+.gallery__item-img--mobile {
   max-width: 100%;
   height: auto;
   transition: all 0.5s ease;
@@ -775,6 +778,15 @@
   }
   .gallery__item {
     flex: 50%;
+  }
+  .gallery-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+  }
+  .gallery-img--mobile {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
