@@ -48,3 +48,12 @@ new Swiper('.image-slider', {
     // Отступ между слайдами
     spaceBetween: 30,
 });
+
+// Галерея
+$(".gallery__list").magnificPopup({
+    delegate: "a",
+    type: "image",
+    gallery: {
+        enabled: true
+    }
+});

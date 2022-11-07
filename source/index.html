@@ -241,7 +241,7 @@
                             <!-- 8 -->
                             <li class="benefit__item">
                                 <p class="benefit__item-text">
-                                    Кофейный аппарат
+                                    Ароматный кофе
                                 </p>
                             </li>
                         </ol>
@@ -1430,7 +1430,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-    <script>
+    <!-- <script>
         $(".gallery__list").magnificPopup({
             delegate: "a",
             type: "image",
@@ -1438,22 +1438,12 @@
                 enabled: true
             }
         });
-    </script>
+    </script> -->
 
     <!-- Слайдер -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Скрипт -->
     <script src="js/index.js"></script>
-
-    <script>
-        var d = new Date();
-        var year = d.getFullYear();
-        var month = d.getMonth() + 1;
-        var day = d.getDate();
-        if (day < 10) day = '0' + day;
-        if (month < 10) month = '0' + month;
-        var fullDate = "" + day + "." + month + "." + year + "";
-        $(".data").html(fullDate);
-    </script>
 </body>
 
 </html>
