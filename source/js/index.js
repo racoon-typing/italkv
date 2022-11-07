@@ -57,3 +57,58 @@ $(".gallery__list").magnificPopup({
         enabled: true
     }
 });
+
+
+// Калькулятор
+const carClass = {
+    class1 : {
+        id: 1,
+        arr = [
+            'Chevrolet Spark', 
+            'Citroen C1',
+            'Daewoo Matiz', 
+            'Daewoo Tico',
+            'FIAT 500',
+            'Ford Ka',
+            'Honda Jazz',
+            'Hyundai Getz',
+            'KIA Picanto', 
+            'Mitsubishi i-MiEV',
+            'Nissan Micra',
+            'Peugeot 106',
+            'Peugeot 107',
+            'Renault Clio',
+            'Renault Smart',
+            'ВАЗ 2101',
+            'ВАЗ 2102',
+            'ВАЗ 2103',
+            'ВАЗ 2104',
+            'ВАЗ 2105',
+            'ВАЗ 2106',
+            'ВАЗ 2107',
+            'ВАЗ 2108',
+            'Ока',
+            'Таврия',
+            'Ауди A1', 
+            'Ауди A3', 
+            'BMW 1',
+            'BMW 2', 
+            'Opel Astra',
+            'Renault Logan', 
+            'SEAT Ibiza', 
+            'SEAT Leon', 
+            'Subaru Jimny', 
+            'Subaru XV', 
+            'Suzuki SX4', 
+            'Toyota Auris', 
+            'Volkswagen Beetle',
+            'ВАЗ 2109',
+            'ВАЗ 2110',
+            'ВАЗ 2111',
+            'ВАЗ 2112',
+            'ВАЗ 2114',
+            'ВАЗ 2115', 
+            'Lada Kalina',
+        ]
+    }
+}
