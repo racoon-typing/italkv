@@ -442,6 +442,7 @@
 .benefit__img {
   display: block;
   width: 280px;
+  height: auto;
   margin: 0 auto;
 }
 .benefit__img-wrapper {
