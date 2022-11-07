@@ -380,6 +380,9 @@
     justify-content: center;
   }
 }
+.bg-image {
+  background-color: #f3f3f3;
+}
 .bg-image__photo {
   display: none;
 }
