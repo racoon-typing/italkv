@@ -63,7 +63,7 @@ $(".gallery__list").magnificPopup({
 const carClass = {
     class1 : {
         id: 1,
-        arr = [
+        arr : [
             'Chevrolet Spark', 
             'Citroen C1',
             'Daewoo Matiz', 
