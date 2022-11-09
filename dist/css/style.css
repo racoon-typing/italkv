@@ -1693,6 +1693,130 @@
     top: 196px;
   }
 }
+.calculator__wrapper {
+  box-sizing: border-box;
+  max-width: 500px;
+  padding: 0 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+.calculator__title {
+  margin: 0;
+  font-size: 26px;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.calculator__form {
+  background-color: #f3f3f3;
+}
+.calculator__form-wrapper {
+  display: flex;
+}
+.calculator__form-price {
+  display: none;
+}
+.calculator__form-price-wrapper--title {
+  width: 100%;
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.calculator__form-price--title {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  line-height: normal;
+}
+.calculator__form-price-subwrapper--number {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.calculator__form-price--number {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+}
+.calculator__form-price-wrapper--price {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+}
+.calculator__form-price--price {
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+}
+.calculator__form-price-subwrapper--price {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.calculator__form-price--price-number {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.calculator__form-error {
+  display: none;
+  padding-top: 5px;
+}
+.calculator__form-error--title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: red;
+}
+.calculator__autocomplete {
+  width: 65%;
+  position: relative;
+  display: inline-block;
+}
+.calculator__autocomplete-input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+.calculator__autocomplete-input[type=text] {
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 0;
+}
+.calculator__autocomplete-button {
+  width: 35%;
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.calculator-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /* расположите элементы автозаполнения так, чтобы они имели ту же ширину, что и контейнер: */
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.calculator-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.calculator-items div:hover {
+  /* при наведении курсора на элемент: */
+  background-color: #e9e9e9;
+}
+.calculator-active {
+  /* при навигации по элементам используются клавиши со стрелками: */
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
 .main-footer {
   background-color: #f3f3f3;
   width: 100%;
