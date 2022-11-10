@@ -62,6 +62,135 @@ $(".gallery__list").magnificPopup({
 // Автоподстановка
 var countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Anguilla", "Antigua &amp; Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia &amp; Herzegovina"];
 
+// // Калькулятор
+const carClass = {
+    class : [
+        {
+            id: 1,
+            arr : [
+                'Chevrolet Spark', 
+                'Citroen C1',
+                'Daewoo Matiz', 
+                'Daewoo Tico',
+                'FIAT 500',
+                'Ford Ka',
+                'Honda Jazz',
+                'Hyundai Getz',
+                'KIA Picanto', 
+                'Mitsubishi i-MiEV',
+                'Nissan Micra',
+                'Peugeot 106',
+                'Peugeot 107',
+                'Renault Clio',
+                'Renault Smart',
+                'ВАЗ 2101',
+                'ВАЗ 2102',
+                'ВАЗ 2103',
+                'ВАЗ 2104',
+                'ВАЗ 2105',
+                'ВАЗ 2106',
+                'ВАЗ 2107',
+                'ВАЗ 2108',
+                'Ока',
+                'Таврия',
+                'Ауди A1', 
+                'Ауди A3', 
+                'BMW 1',
+                'BMW 2', 
+                'Opel Astra',
+                'Renault Logan', 
+                'SEAT Ibiza', 
+                'SEAT Leon', 
+                'Subaru Jimny', 
+                'Subaru XV', 
+                'Suzuki SX4', 
+                'Toyota Auris', 
+                'Volkswagen Beetle',
+                'ВАЗ 2109',
+                'ВАЗ 2110',
+                'ВАЗ 2111',
+                'ВАЗ 2112',
+                'ВАЗ 2114',
+                'ВАЗ 2115', 
+                'Lada Kalina',
+            ]
+        },
+        {
+            id: 2,
+            arr : [
+                'Audi 80', 
+                'Audi TT', 
+                'Audi A4',
+                'BMW 3',
+                'Brilliance H230',
+                'Chery Very',
+                'Chevrolet Aveo', 
+                'Chevrolet Cruse', 
+                'Chevrolet Lacetti', 
+                'Niva 3дв',
+                'Citroen C-Elysee', 
+                'Citroen C3', 
+                'Citroen C4', 
+                'Citroen Picasso',
+                'Daewoo Gentra', 
+                'Daewoo Nexia', 
+                'Daewoo Lanos', 
+                'Datsun on-DO', 
+                'Dongfeng S30', 
+                'Dongfeng H30', 
+                'FAW V5', 
+                'FIAT Punto', 
+                'Ford Fiesta', 
+                'Ford Focus', 
+                'Ford Fusion', 
+                'Geely MK', 
+                'Geely GC6', 
+                'Honda Civic', 
+                'Hyundai Accent', 
+                'Hyundai i30', 
+                'Hyundai Elantra', 
+                'Hyundai Solaris', 
+                'Kia Ceed', 
+                'Kia Cerato', 
+                'Kia Rio', 
+                'Lexus CT', 
+                'Lifan Smily', 
+                'Lifan Solano', 
+                'Mazda 3', 
+                'Mitsubishi Lancer', 
+                'Mercedes CLA', 
+                'Mercedes GLA',
+                'MINI',
+                'Волга', 
+                'Citroen C5', 
+                'Skoda Rapid', 
+                'Citroen Berlingo', 
+                'Mitsubishi Carisma', 
+                'Nissan Almera', 
+                'Nissan Tiida', 
+                'Nissan Note', 
+                'Nissan Sentra', 
+                'Renault Megane', 
+                'Toyota Corolla', 
+                'Lada Granta', 
+                'Lada Priora',
+                'Volkswagen Polo', 
+                'Volkswagen Golf',
+                'Volkswagen Juke', 
+                'Volkswagen Jetta', 
+                'Volvo V40', 
+                'Peugeot 206',
+                'Peugeot 208',
+                'Peugeot 301',
+                'Peugeot 307',
+                'Peugeot 308', 
+                'Mercedes A', 
+                'Mercedes B',
+                'Mercedes C'
+            ]
+        }
+    ]
+}
 
 function autocomplete(inp, arr) {
     /* функция автозаполнения принимает два аргумента,
@@ -71,6 +200,9 @@ function autocomplete(inp, arr) {
     inp.addEventListener("input", function (e) {
         var a, b, i, val = this.value;
         /* закрыть все уже открытые списки значений автозаполнения */
+        console.log(val);
+        // console.log(a);
+
         closeAllLists();
         if (!val) { return false; }
         currentFocus = -1;
@@ -192,57 +324,3 @@ function calculatePrice() {
     }
 }
 
-
-// // Калькулятор
-// const carClass = {
-//     class1 : {
-//         id: 1,
-//         arr : [
-//             'Chevrolet Spark', 
-//             'Citroen C1',
-//             'Daewoo Matiz', 
-//             'Daewoo Tico',
-//             'FIAT 500',
-//             'Ford Ka',
-//             'Honda Jazz',
-//             'Hyundai Getz',
-//             'KIA Picanto', 
-//             'Mitsubishi i-MiEV',
-//             'Nissan Micra',
-//             'Peugeot 106',
-//             'Peugeot 107',
-//             'Renault Clio',
-//             'Renault Smart',
-//             'ВАЗ 2101',
-//             'ВАЗ 2102',
-//             'ВАЗ 2103',
-//             'ВАЗ 2104',
-//             'ВАЗ 2105',
-//             'ВАЗ 2106',
-//             'ВАЗ 2107',
-//             'ВАЗ 2108',
-//             'Ока',
-//             'Таврия',
-//             'Ауди A1', 
-//             'Ауди A3', 
-//             'BMW 1',
-//             'BMW 2', 
-//             'Opel Astra',
-//             'Renault Logan', 
-//             'SEAT Ibiza', 
-//             'SEAT Leon', 
-//             'Subaru Jimny', 
-//             'Subaru XV', 
-//             'Suzuki SX4', 
-//             'Toyota Auris', 
-//             'Volkswagen Beetle',
-//             'ВАЗ 2109',
-//             'ВАЗ 2110',
-//             'ВАЗ 2111',
-//             'ВАЗ 2112',
-//             'ВАЗ 2114',
-//             'ВАЗ 2115', 
-//             'Lada Kalina',
-//         ]
-//     }
-// }
