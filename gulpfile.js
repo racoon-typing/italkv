@@ -42,7 +42,7 @@ export { deployZIP }
 // Логин:
 // cg69657
 // Пароль:
-// QjVYZti2qlVO
+// uwQSufy3
 // Доступ по FTP
 // ftp://vh328.timeweb.ru
 export { deployFTP }
