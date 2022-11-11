@@ -59,9 +59,6 @@ $(".gallery__list").magnificPopup({
 });
 
 
-// Автоподстановка
-var countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Anguilla", "Antigua &amp; Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia &amp; Herzegovina"];
-
 // // Калькулятор
 const carClass = [
     // id: 1
