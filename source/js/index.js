@@ -432,18 +432,18 @@ const carClass = [
     'Viano'
 ]
 
-const priceList = [
-    wash-Standard  {
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-    }
-]
+// const priceList = [
+//     wash-Standard  {
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//     }
+// ]
 
 function autocomplete(inp, arr) {
     /* функция автозаполнения принимает два аргумента,
@@ -545,7 +545,7 @@ function autocomplete(inp, arr) {
     });
 }
 
-autocomplete(document.getElementById("myInput"), countries);
+autocomplete(document.getElementById("myInput"), carClass);
 
 
 // Подсчет стоимости
