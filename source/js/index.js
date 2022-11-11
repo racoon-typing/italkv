@@ -351,6 +351,10 @@ function autocomplete(inp, arr) {
         a.setAttribute("class", "calculator-items");
         /* добавьте элемент DIV в качестве дочернего элемента контейнера автозаполнения: */
         this.parentNode.appendChild(a);
+        // для каждого массива
+        // for (i = 0; i < carClass.class.length; i++) {
+        //     console.log(carClass.class.length);
+        // }
         /* для каждого элемента в массиве... */
         for (i = 0; i < arr.length; i++) {
             /* проверьте, начинается ли элемент с тех же букв, что и значение текстового поля: */
@@ -431,7 +435,109 @@ function autocomplete(inp, arr) {
     });
 }
 
-autocomplete(document.getElementById("myInput"), countries);
+autocomplete(document.getElementById("myInput"), carClass);
+
+// function autocomplete(inp, arr) {
+//     /* функция автозаполнения принимает два аргумента,
+//     элемент текстового поля и массив возможных значений автозаполнения: */
+//     var currentFocus;
+//     /* выполнение функции, когда кто-то пишет в текстовом поле: */
+//     inp.addEventListener("input", function (e) {
+//         var a, b, i, val = this.value;
+//         /* закрыть все уже открытые списки значений автозаполнения */
+//         console.log(val);
+//         // console.log(a);
+
+//         closeAllLists();
+//         if (!val) { return false; }
+//         currentFocus = -1;
+//         /* создайте элемент DIV, который будет содержать элементы (значения): */
+//         a = document.createElement("DIV");
+//         a.setAttribute("id", this.id + "calculator-list");
+//         a.setAttribute("class", "calculator-items");
+//         /* добавьте элемент DIV в качестве дочернего элемента контейнера автозаполнения: */
+//         this.parentNode.appendChild(a);
+//         /* для каждого элемента в массиве... */
+//         for (i = 0; i < arr.length; i++) {
+//             /* проверьте, начинается ли элемент с тех же букв, что и значение текстового поля: */
+//             if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+//                 /* создайте элемент DIV для каждого соответствующего элемента: */
+//                 b = document.createElement("DIV");
+//                 /* сделайте соответствующие буквы жирным шрифтом: */
+//                 b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+//                 b.innerHTML += arr[i].substr(val.length);
+//                 /* вставьте поле ввода, которое будет содержать значение текущего элемента массива: */
+//                 b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+//                 /* выполнение функции, когда кто-то нажимает на значение элемента (элемент DIV): */
+//                 b.addEventListener("click", function (e) {
+//                     /* вставьте значение для текстового поля автозаполнения: */
+//                     inp.value = this.getElementsByTagName("input")[0].value;
+//                     /* закройте список значений автозаполнения,
+//                     (или любые другие открытые списки значений автозаполнения : */
+//                     closeAllLists();
+//                 });
+//                 a.appendChild(b);
+//             }
+//         }
+//     });
+//     /* выполнение функции нажимает клавишу на клавиатуре: */
+//     inp.addEventListener("keydown", function (e) {
+//         var x = document.getElementById(this.id + "calculator-list");
+//         if (x) x = x.getElementsByTagName("div");
+//         if (e.keyCode == 40) {
+//             /* Если нажата клавиша со стрелкой вниз,
+//             увеличение текущей переменной фокуса: */
+//             currentFocus++;
+//             /* и сделать текущий элемент более видимым: */
+//             addActive(x);
+//         } else if (e.keyCode == 38) { //вверх
+//             /* Если нажата клавиша со стрелкой вверх,
+//             уменьшите текущую переменную фокуса: */
+//             currentFocus--;
+//             /* и сделать текущий элемент более видимым: */
+//             addActive(x);
+//         } else if (e.keyCode == 13) {
+//             /* Если нажата клавиша ENTER, предотвратите отправку формы, */
+//             e.preventDefault();
+//             if (currentFocus > -1) {
+//                 /* и имитировать щелчок по элементу "active": */
+//                 if (x) x[currentFocus].click();
+//             }
+//         }
+//     });
+//     function addActive(x) {
+//         /* функция для классификации элемента как "active": */
+//         if (!x) return false;
+//         /* начните с удаления "активного" класса для всех элементов: */
+//         removeActive(x);
+//         if (currentFocus >= x.length) currentFocus = 0;
+//         if (currentFocus < 0) currentFocus = (x.length - 1);
+//         /*добавить класса "autocomplete-active": */
+//         x[currentFocus].classList.add("calculator-active");
+//     }
+//     function removeActive(x) {
+//         /* функция для удаления "активного" класса из всех элементов автозаполнения: */
+//         for (var i = 0; i < x.length; i++) {
+//             x[i].classList.remove("calculator-active");
+//         }
+//     }
+//     function closeAllLists(elmnt) {
+//         /* закройте все списки автозаполнения в документе,
+//         кроме того, который был передан в качестве аргумента: */
+//         var x = document.getElementsByClassName("calculator-items");
+//         for (var i = 0; i < x.length; i++) {
+//             if (elmnt != x[i] && elmnt != inp) {
+//                 x[i].parentNode.removeChild(x[i]);
+//             }
+//         }
+//     }
+//     /* выполнение функции, когда кто-то щелкает в документе: */
+//     document.addEventListener("click", function (e) {
+//         closeAllLists(e.target);
+//     });
+// }
+
+// autocomplete(document.getElementById("myInput"), countries);
 
 
 // Подсчет стоимости
