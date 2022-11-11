@@ -432,6 +432,18 @@ const carClass = [
     'Viano'
 ]
 
+const priceList = [
+    wash-Standard  {
+        class1 : 650,
+        class1 : 650,
+        class1 : 650,
+        class1 : 650,
+        class1 : 650,
+        class1 : 650,
+        class1 : 650,
+        class1 : 650,
+    }
+]
 
 function autocomplete(inp, arr) {
     /* функция автозаполнения принимает два аргумента,
