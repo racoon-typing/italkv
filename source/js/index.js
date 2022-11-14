@@ -313,119 +313,119 @@ const carClass = [
     'Lada Largus',
     'Niva',
     // id: 4
-    'Acura RDX', 
-    'Acura MDX', 
-    'Audi A8', 
-    'Audi Q7', 
-    'Audi R8', 
-    'Bentley Continental', 
-    'BMW 7', 
-    'BMW X5', 
+    'Acura RDX',
+    'Acura MDX',
+    'Audi A8',
+    'Audi Q7',
+    'Audi R8',
+    'Bentley Continental',
+    'BMW 7',
+    'BMW X5',
     'BMW X6',
-    'Cadillac SRX', 
-    'Chevrolet Camaro', 
+    'Cadillac SRX',
+    'Chevrolet Camaro',
     'Chrysler Grand Voyager',
-    'Dodge Journey', 
-    'Dodge Caravan', 
+    'Dodge Journey',
+    'Dodge Caravan',
     'Dodge Durango',
-    'Ferrari', 
-    'FIAT Doblo', 
+    'Ferrari',
+    'FIAT Doblo',
     'FIAT Freemont',
     'Great Wall Hover H3',
-    'Great Wall Hover H5', 
-    'Hyundai Santa Fe', 
-    'Hyundai ix55', 
-    'Hyundai Genesis', 
-    'Hyundai Equus', 
-    'Infiniti QX60(JX)', 
-    'Infiniti QX70(FX)', 
-    'Jaguar XE', 
-    'Jaguar XF', 
-    'Jaguar XFR', 
-    'Jaguar F-type', 
-    'Jaguar XJ', 
-    'JEEP Cherokee', 
-    'JEEP Grand Cherokee', 
-    'JEEP Commander', 
-    'JEEP Wrangler', 
-    'Kia Mohave', 
-    'Kia Sorento', 
+    'Great Wall Hover H5',
+    'Hyundai Santa Fe',
+    'Hyundai ix55',
+    'Hyundai Genesis',
+    'Hyundai Equus',
+    'Infiniti QX60(JX)',
+    'Infiniti QX70(FX)',
+    'Jaguar XE',
+    'Jaguar XF',
+    'Jaguar XFR',
+    'Jaguar F-type',
+    'Jaguar XJ',
+    'JEEP Cherokee',
+    'JEEP Grand Cherokee',
+    'JEEP Commander',
+    'JEEP Wrangler',
+    'Kia Mohave',
+    'Kia Sorento',
     'Kia Carnival',
     'Lamborghini',
     'Lexus RX',
     'Lexus GX',
-    'Lexus LS', 
-    'Maserati', 
-    'Mazda CX-7', 
-    'Mazda CX-9', 
+    'Lexus LS',
+    'Maserati',
+    'Mazda CX-7',
+    'Mazda CX-9',
     'Mercedes CLS',
     'Mercedes G',
     'Mercedes GLE',
-    'Mercedes GLC', 
+    'Mercedes GLC',
     'Mercedes ML',
-    'Mercedes S', 
-    'Mercedes SL', 
+    'Mercedes S',
+    'Mercedes SL',
     'Mitsubishi Pajero',
     'Nissan NP-300',
-    'Peugeot Partner', 
-    'Porsche Panamera', 
-    'Porsche Cayenne', 
-    'Peugeot 607', 
-    'Subaru Tribeca', 
-    'Toyota Highlander', 
-    'Toyota Prado', 
-    'Volvo S80', 
-    'Volvo XC 90', 
+    'Peugeot Partner',
+    'Porsche Panamera',
+    'Porsche Cayenne',
+    'Peugeot 607',
+    'Subaru Tribeca',
+    'Toyota Highlander',
+    'Toyota Prado',
+    'Volvo S80',
+    'Volvo XC 90',
     'Volkswagen Touareg',
-    'UAZ Patriot', 
+    'UAZ Patriot',
     'UAZ Hunter',
     // id: 4
-    'BMW X7', 
-    'Cadillac Escalade', 
+    'BMW X7',
+    'Cadillac Escalade',
     'Сhevrolet Tahoe',
     'Сhevrolet Suburban',
-    'Ford Explorer', 
-    'Ford Excursion', 
+    'Ford Explorer',
+    'Ford Excursion',
     'Ford Transit',
-    'Hummer', 
-    'Hyundai H1', 
-    'Hyundai Starex', 
-    'Hyundai Porter', 
-    'Lincoln Navigator', 
-    'Nissan Armada', 
-    'Nissan Navara', 
-    'Infiniti QX80', 
-    'Mercedes GL', 
-    'Mercedes V', 
-    'Peugeot Boxer', 
-    'Citroen Jumper', 
-    'Toyota Hilux', 
-    'Toyota Hiace', 
-    'Toyota Tundra', 
-    'Toyota Hiace', 
-    'Toyota Seguoia', 
-    'FIAT Ducato', 
-    'Volkswagen California', 
-    'Volkswagen Amarock', 
-    'Volkswagen Phaeton', 
-    'Volkswagen Multivan', 
-    'Volkswagen Transporter', 
-    'Trail Blazer', 
-    'Honda Cross tour', 
+    'Hummer',
+    'Hyundai H1',
+    'Hyundai Starex',
+    'Hyundai Porter',
+    'Lincoln Navigator',
+    'Nissan Armada',
+    'Nissan Navara',
+    'Infiniti QX80',
+    'Mercedes GL',
+    'Mercedes V',
+    'Peugeot Boxer',
+    'Citroen Jumper',
+    'Toyota Hilux',
+    'Toyota Hiace',
+    'Toyota Tundra',
+    'Toyota Hiace',
+    'Toyota Seguoia',
+    'FIAT Ducato',
+    'Volkswagen California',
+    'Volkswagen Amarock',
+    'Volkswagen Phaeton',
+    'Volkswagen Multivan',
+    'Volkswagen Transporter',
+    'Trail Blazer',
+    'Honda Cross tour',
     'Honda Pilot',
-    'Land Rover Discovery', 
-    'Range Rover', 
-    'Range Rover Sport', 
-    'Range Rover Defender', 
-    'Lexus LX', 
-    'Pajero Sport', 
-    'Pajero L-200', 
-    'Nissan Pathfinder', 
-    'Rolls-Royce', 
+    'Land Rover Discovery',
+    'Range Rover',
+    'Range Rover Sport',
+    'Range Rover Defender',
+    'Lexus LX',
+    'Pajero Sport',
+    'Pajero L-200',
+    'Nissan Pathfinder',
+    'Rolls-Royce',
     'Toyota Land Cruiser 100',
-    'Toyota Land Cruiser 200', 
-    'Aurus', 
-    'Mercedes Vito', 
+    'Toyota Land Cruiser 200',
+    'Aurus',
+    'Mercedes Vito',
     'Viano'
 ]
 
@@ -441,8 +441,8 @@ const carClass = [
 //         class1 : 650,
 //     }
 // ]
-
 function autocomplete(inp, arr) {
+    let inputValue;
     /* функция автозаполнения принимает два аргумента,
     элемент текстового поля и массив возможных значений автозаполнения: */
     var currentFocus;
@@ -450,9 +450,6 @@ function autocomplete(inp, arr) {
     inp.addEventListener("input", function (e) {
         var a, b, i, val = this.value;
         /* закрыть все уже открытые списки значений автозаполнения */
-        console.log(val);
-        // console.log(a);
-
         closeAllLists();
         if (!val) { return false; }
         currentFocus = -1;
@@ -477,6 +474,45 @@ function autocomplete(inp, arr) {
                 b.addEventListener("click", function (e) {
                     /* вставьте значение для текстового поля автозаполнения: */
                     inp.value = this.getElementsByTagName("input")[0].value;
+                    inputValue = inp.value;
+                    console.log(inputValue);
+
+                    // Калькулятор
+                    let calculateButton = document.querySelector('.calculator__autocomplete-button');
+                    let errorMessage = document.querySelector('.calculator__form-error');
+                    let priceMessage = document.querySelector('.calculator__form-price');
+                    let carNumber = document.querySelector('.calculator__form-price--number');
+
+                    calculateButton.addEventListener('click', calculatorPrice(inputValue))
+
+                    function calculatorPrice(value) {
+                        if (!value) {
+                            errorMessage.style.display = 'block';
+                            priceMessage.style.display = 'none';
+                        }
+
+                        if (carClass.includes(inputValue)) {
+                            priceMessage.style.display = 'block';
+                            let number = carClass.indexOf(inputValue);
+                            console.log(number);
+
+                            if (number < 45) {
+                                carNumber.textContent = '1';
+                            } else if (46 <= number < 113) {
+                                carNumber.textContent = '2';
+                            } else if (114 <= number < 179) {
+                                carNumber.textContent = '3';
+                            } else if (179 <= number < 244) {
+                                carNumber.textContent = '4';
+                            } else if (244 <= number <= 290) {
+                                carNumber.textContent = '5';
+                            }
+
+                            // console.log('Показать класс');
+                        }
+                    }
+
+
                     /* закройте список значений автозаполнения,
                     (или любые другие открытые списки значений автозаполнения : */
                     closeAllLists();
@@ -545,32 +581,55 @@ function autocomplete(inp, arr) {
 autocomplete(document.getElementById("myInput"), carClass);
 
 
-// Подсчет стоимости
-let calculateButtonNode = document.querySelector('.calculator__autocomplete-button');
-let calculateInputNode = document.querySelector('.calculator__autocomplete-input');
+// Форма
+// let formNode = document.querySelector('.calculator__form');
+// let calculateButton = document.querySelector('.calculator__autocomplete-button');
 
-calculateButtonNode.addEventListener('click', calculatePrice)
+// formNode.addEventListener('submit', calculatePrice);
 
-function calculatePrice() {
-    let carValue = calculateInputNode.value;
-    let errorMessage = document.querySelector('.calculator__form-error');
-    let priceMessagr = document.querySelector('.calculator__form-price');
-    // console.log(carValue);
+// function calculatePrice() {
+//     let carValue = formNode.value;
 
-    if (carValue === '') {
-        // Вывести ошибку
-        errorMessage.style.display = 'block';
-    }
-    // else if (countries.contains(carValue)) {
-    //     // Выводит цену
-    //     errorMessage.style.display = 'none';
-    //     priceMessagr.style.display = 'block';
-    // }
+//     console.log(carValue);
+//     if (carValue === '') {
+//         // Вывести ошибку
+//         errorMessage.style.display = 'block';
+//     } 
 
-    if (countries.includes(`${carValue}`)) {
-        priceMessagr.style.display = 'block';
-        console.log(carValue);
+// }
 
-    }
-}
+// let calculateInputNode = document.querySelector('.calculator__autocomplete-input');
+// let calculateButton = document.querySelector('.calculator__autocomplete-button');
 
+// calculateButton.addEventListener('click', showError)
+
+// function showError() {
+//     let carValue = calculateInputNode.value;
+//     let errorMessage = document.querySelector('.calculator__form-error');
+//     let calculatorInput = document.querySelector('.calculator__autocomplete-input');
+
+//     if (carValue === '') {
+//         // Вывести ошибку
+//         errorMessage.style.display = 'block';
+//     } 
+
+//     calculatorInput.addEventListener('input', () => {
+//         // Убирает ошибку
+//         let value = this.value;
+
+//         if (!value) {
+//             errorMessage.style.display = 'none';  
+//         }
+//     });
+// }
+
+
+// let priceMessage = document.querySelector('.calculator__form-price');
+
+
+// console.log(object.includes(carValue));
+
+// if (object.includes(carValue)) {
+//     priceMessage.style.display = 'block';
+//     console.log('Показать класс');
+// }
