@@ -494,21 +494,20 @@ function autocomplete(inp, arr) {
                         if (carClass.includes(inputValue)) {
                             priceMessage.style.display = 'block';
                             let number = carClass.indexOf(inputValue);
+                            carNumber.textContent = '';
                             console.log(number);
 
                             if (number < 45) {
                                 carNumber.textContent = '1';
-                            } else if (46 <= number < 113) {
+                            } else if (45 <= number && number < 114) {
                                 carNumber.textContent = '2';
-                            } else if (114 <= number < 179) {
+                            } else if (114 <= number && number < 246) {
                                 carNumber.textContent = '3';
-                            } else if (179 <= number < 244) {
+                            } else if (246 <= number && number < 314) {
                                 carNumber.textContent = '4';
-                            } else if (244 <= number <= 290) {
+                            } else if (314 <= number) {
                                 carNumber.textContent = '5';
                             }
-
-                            // console.log('Показать класс');
                         }
                     }
 
