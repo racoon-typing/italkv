@@ -1710,6 +1710,15 @@
 .calculator__form {
   background-color: #f3f3f3;
 }
+.calculator__form-select {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  line-height: normal;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: 16px;
+}
 .calculator__form-wrapper {
   display: flex;
 }
@@ -1776,13 +1785,11 @@
 }
 .calculator__autocomplete-input {
   border: 1px solid transparent;
-  background-color: #f1f1f1;
   padding: 10px;
   font-size: 16px;
 }
 .calculator__autocomplete-input[type=text] {
   box-sizing: border-box;
-  background-color: #f1f1f1;
   width: 100%;
   margin: 0;
 }
