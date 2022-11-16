@@ -429,18 +429,18 @@ const carClass = [
     'Viano'
 ]
 
-const priceList = [
-    wash-Standard  {
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-        class1 : 650,
-    }
-]
+// const priceList = [
+//     wash-Standard  {
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//         class1 : 650,
+//     }
+// ]
 
 function autocomplete(inp, arr) {
     let inputValue;
@@ -483,7 +483,7 @@ function autocomplete(inp, arr) {
                     let errorMessage = document.querySelector('.calculator__form-error');
                     let priceMessage = document.querySelector('.calculator__form-price');
                     let carNumber = document.querySelector('.calculator__form-price--number');
-                    let carServices = document.querySelector('.calculator__form-select');
+                    // let carServices = document.querySelector('.calculator__form-select');
 
                     calculateButton.addEventListener('click', calculatorPrice(inputValue))
 
@@ -498,30 +498,30 @@ function autocomplete(inp, arr) {
                             let number = carClass.indexOf(inputValue);
                             carNumber.textContent = '';
 
-                            let classNumber;
+                            // let classNumber;
 
                             if (number < 45) {
                                 carNumber.textContent = '1';
-                                classNumber = 0;
+                                // classNumber = 0;
                             } else if (45 <= number && number < 114) {
                                 carNumber.textContent = '2';
-                                classNumber = 1;
+                                // classNumber = 1;
                             } else if (114 <= number && number < 246) {
                                 carNumber.textContent = '3';
-                                classNumber = 2;
+                                // classNumber = 2;
                             } else if (246 <= number && number < 314) {
                                 carNumber.textContent = '4';
-                                classNumber = 3;
+                                // classNumber = 3;
                             } else if (314 <= number) {
                                 carNumber.textContent = '5';
-                                classNumber = 4;
+                                // classNumber = 4;
                             }
 
-                            let carSelect = carServices.value;
+                            // let carSelect = carServices.value;
 
-                            if (carSelect === 0) {
-                                let priceNumber = priceList.[0].classNumber;
-                            }
+                            // if (carSelect === 0) {
+                            //     let priceNumber = priceList.[0].classNumber;
+                            // }
                         }
                     }
 
