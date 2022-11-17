@@ -6,6 +6,11 @@
         padding-top: 40px;
         padding-bottom: 40px;
         margin: 0 auto;
+        
+        &-content {
+            background-color: #f3f3f3; 
+            padding: 30px 20px;           
+        }
     }
 
     &__title {
@@ -16,16 +21,16 @@
     }
 
     &__form {
-        background-color: @bg-color-second;
-
         &-select {
             display: block;
             width: 100%;
             min-height: 40px;
             line-height: normal;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             padding: 0 10px;
             font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid black;
         }
 
         // Инпут
@@ -35,7 +40,7 @@
 
         // Вывод цены
         &-price {
-            display: none;
+            // display: none;
             // 1
             &-wrapper--title {
                 width: 100%;
@@ -105,14 +110,15 @@
     }
 
     &__autocomplete {
-        width: 65%;
+        width: 100%;
         position: relative;
         display: inline-block;
 
         &-input {
-            border: 1px solid transparent;
+            border: 1px solid black;
             padding: 10px;
             font-size: 16px;
+            border-radius: 5px;
 
             &[type=text] {
                 box-sizing: border-box;
@@ -122,6 +128,7 @@
         }
 
         &-button {
+            display: none;
             border: 1px solid transparent;
             padding: 10px;
             font-size: 16px;

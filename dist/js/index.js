@@ -429,18 +429,65 @@ const carClass = [
     'Viano'
 ]
 
-// const priceList = [
-//     wash-Standard  {
-//         class1 : 650,
-//         class1 : 650,
-//         class1 : 650,
-//         class1 : 650,
-//         class1 : 650,
-//         class1 : 650,
-//         class1 : 650,
-//         class1 : 650,
-//     }
-// ]
+const priceList = {
+    standard : [
+        '650', // 1
+        '700', // 2
+        '750', // 3
+        '850', // 4
+        '1000', // 5
+        '1300', // 6
+    ],
+    complex : [
+        '1100', // 1
+        '1200', // 2
+        '1300', // 3
+        '1500', // 4
+        '1600', // 5
+        '2000', // 6
+    ],
+    nanoSimple : [
+        '1300', // 1
+        '1400', // 2
+        '1500', // 3
+        '1700', // 4
+        '1900', // 5
+        '2500', // 6
+    ],
+    nanoComplex : [
+        '1700', // 1
+        '1800', // 2
+        '2100', // 3
+        '2300', // 4
+        '2500', // 5
+        '3500', // 6
+    ],
+    italya : [
+        '4500', // 1
+        '5000', // 2
+        '5500', // 3
+        '6000', // 4
+        '7000', // 5
+        '8000', // 6
+    ],
+    crystal : [
+        '3800', // 1
+        '4300', // 2
+        '4800', // 3
+        '5500', // 4
+        '6000', // 5
+        '7000', // 6
+    ],
+    fast : [
+        '350', // 1
+        '450', // 2
+        '500', // 3
+        '550', // 4
+        '650', // 5
+        '800', // 6
+    ]
+}
+
 
 function autocomplete(inp, arr) {
     let inputValue;
@@ -476,18 +523,17 @@ function autocomplete(inp, arr) {
                     /* вставьте значение для текстового поля автозаполнения: */
                     inp.value = this.getElementsByTagName("input")[0].value;
                     inputValue = inp.value;
-                    console.log(inputValue);
 
                     // Калькулятор
-                    let calculateButton = document.querySelector('.calculator__autocomplete-button');
                     let errorMessage = document.querySelector('.calculator__form-error');
                     let priceMessage = document.querySelector('.calculator__form-price');
                     let carNumber = document.querySelector('.calculator__form-price--number');
-                    // let carServices = document.querySelector('.calculator__form-select');
+                    let carServicesValue = document.querySelector('.calculator__form-select').value;
+                    let priceNumber = document.querySelector('.calculator__form-price--price-number');
+                    console.log(carServicesValue);
 
-                    calculateButton.addEventListener('click', calculatorPrice(inputValue))
 
-                    function calculatorPrice(value) {
+                    function calculatorPrice(value, value2) {
                         if (!value) {
                             errorMessage.style.display = 'block';
                             priceMessage.style.display = 'none';
@@ -498,32 +544,54 @@ function autocomplete(inp, arr) {
                             let number = carClass.indexOf(inputValue);
                             carNumber.textContent = '';
 
-                            // let classNumber;
+                            let classNumber;
 
                             if (number < 45) {
                                 carNumber.textContent = '1';
-                                // classNumber = 0;
+                                classNumber = 0;
                             } else if (45 <= number && number < 114) {
                                 carNumber.textContent = '2';
-                                // classNumber = 1;
+                                classNumber = 1;
                             } else if (114 <= number && number < 246) {
                                 carNumber.textContent = '3';
-                                // classNumber = 2;
+                                classNumber = 2;
                             } else if (246 <= number && number < 314) {
                                 carNumber.textContent = '4';
-                                // classNumber = 3;
+                                classNumber = 3;
                             } else if (314 <= number) {
                                 carNumber.textContent = '5';
-                                // classNumber = 4;
+                                classNumber = 4;
                             }
 
-                            // let carSelect = carServices.value;
+                            console.log(classNumber);
+                            console.log(value2.standard[classNumber]);
 
-                            // if (carSelect === 0) {
-                            //     let priceNumber = priceList.[0].classNumber;
-                            // }
+                            if (carServicesValue === 'standard') {
+                                // 1
+                                return priceNumber.textContent = `${value2.standard[classNumber]} ₽`;
+                            } else if (carServicesValue === 'complex') {
+                                // 2
+                                return priceNumber.textContent = `${value2.complex[classNumber]} ₽`;
+                            } else if (carServicesValue === 'nanoSimple') {
+                                // 3
+                                return priceNumber.textContent = `${value2.nanoSimple[classNumber]} ₽`;
+                            } else if (carServicesValue === 'nanoComplex') {
+                                // 4
+                                return priceNumber.textContent = `${value2.nanoComplex[classNumber]} ₽`;
+                            } else if (carServicesValue === 'italya') {
+                                // 5
+                                return priceNumber.textContent = `${value2.italya[classNumber]} ₽`;
+                            } else if (carServicesValue === 'crystal') {
+                                // 6
+                                return priceNumber.textContent = `${value2.crystal[classNumber]} ₽`;
+                            } else if (carServicesValue === 'fast') {
+                                // 7
+                                return priceNumber.textContent = `${value2.fast[classNumber]} ₽`;
+                            }
                         }
                     }
+
+                    calculatorPrice(inputValue, priceList);
 
 
                     /* закройте список значений автозаполнения,
