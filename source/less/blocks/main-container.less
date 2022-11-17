@@ -8,6 +8,15 @@
 @media (min-width: 768px) {
     .main-container {
         padding-top: 106px;
+
+        &__section-wrapper {
+            display: grid;
+            max-width: 900px;
+            grid-template-columns: 1fr 1fr;
+            box-sizing: border-box;
+            padding: 70px 30px;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -15,6 +24,12 @@
 @media (min-width: 1200px) {
     .main-container {
         padding-top: 126px;
+
+        &__section-wrapper {
+            max-width: 1440px;
+            padding: 120px 110px;
+            margin: 0 auto;
+        }
 
         &__wrapper-section {
             display: flex;
