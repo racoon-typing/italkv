@@ -39,10 +39,6 @@ const deployFTP = gulp.series(reset, mainTasks, ftp);
 export { dev }
 export { deployZIP }
 
-// Логин:
-// cg69657
-// Пароль:
-// uwQSufy3
 // Доступ по FTP
 // ftp://vh328.timeweb.ru
 export { deployFTP }
